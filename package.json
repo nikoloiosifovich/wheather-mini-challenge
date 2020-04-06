@@ -1,0 +1,25 @@
+{
+  "name": "wheather-mini-challenge",
+  "version": "1.0.0",
+  "description": "Digamos que você está em Maceió-AL e gostaria de ir à praia. O clima por aqui pode mudar rapidamente estragando, assim, seus  planos de um dia de lazer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoloiosifovich/wheather-mini-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoloiosifovich/wheather-mini-challenge/issues"
+  },
+  "homepage": "https://github.com/nikoloiosifovich/wheather-mini-challenge#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  }
+}

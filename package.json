@@ -2,10 +2,10 @@
   "name": "wheather-mini-challenge",
   "version": "1.0.0",
   "description": "Digamos que você está em Maceió-AL e gostaria de ir à praia. O clima por aqui pode mudar rapidamente estragando, assim, seus  planos de um dia de lazer.",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node",
-    "dev": "nodemon",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nikoloiosifovich/wheather-mini-challenge#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "moment": "^2.24.0",

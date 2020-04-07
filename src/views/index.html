@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROGA Wheather</title>
+</head>
+
+<body>
+  {% for day in days %}
+  <span id="day">
+    {{ day.dt }}
+    {{ day.temp.day }} °C
+    {{ day.humidity }} %
+    {{ day.weather }}
+    {{ day.0.description }}
+    {{ day.0.icon }}
+  </span>
+  {% endfor %}
+</body>
+
+</html>

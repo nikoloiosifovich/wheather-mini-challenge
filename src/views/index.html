@@ -1,23 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+{% extends "layout.html" %}
+{% block content %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROGA Wheather</title>
-</head>
+<div class="show_weather_inner">
 
-<body>
-  {% for day in days %}
-  <span id="day">
-    {{ day.dt }}
-    {{ day.temp.day }} °C
-    {{ day.humidity }} %
-    {{ day.weather }}
-    {{ day.0.description }}
-    {{ day.0.icon }}
-  </span>
+  {% for day in data %}
+  <article class="weather_wrapper">
+
+    <div class="weather_sup_wrapper">
+      <div class="weather_day">
+        <h1 class="weather_day">{{day.dt}}</h1>
+      </div>
+      <div class="weather_status">
+        <h2 class="weather_day_message">Fique em casa</h2>
+        <p class="weather_day_desciption">{{day.weather[0].description}}</p>
+        <div class="weather_status_icon">
+          <img src="http://openweathermap.org/img/wn/{{day.weather[0].icon}}@2x.png"
+            alt="{{day.weather[0].description}}">
+        </div>
+      </div>
+    </div>
+
+    <div class="weather_inf_wrapper">
+      <div class="weather_day_info">
+        <span>HUMIDADE</span>
+        <p>{{day.humidity}} %</p>
+      </div>
+      <div class="weather_day_info">
+        <span>DIA</span>
+        <p>{{day.temp['day']}}°C</p>
+      </div>
+      <div class="weather_day_info">
+        <span>MIN</span>
+        <p>{{day.temp['min']}}°C</p>
+      </div>
+      <div class="weather_day_info">
+        <span>MAX</span>
+        <p>{{day.temp['max']}}°C</p>
+      </div>
+    </div>
+
+  </article>
   {% endfor %}
-</body>
 
-</html>
+</div>
+
+{% endblock %}

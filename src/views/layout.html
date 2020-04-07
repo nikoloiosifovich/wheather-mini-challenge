@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROGA Wheather</title>
+  {% include "linkedhead.html" %}
+</head>
+
+<body>
+  <div id="weather_frame">
+    <div id="weather_focused" style="outline: none" tabindex="-1" role="group">
+      <main class="layout_main">
+        <section class="show_weather_wrapper">
+
+          {% block content %}
+          {% endblock %}
+
+        </section>
+      </main>
+    </div>
+  </div>
+
+  {% include "linkedfooter.html" %}
+  {% include "linkedscripts.html" %}
+</body>
+
+</html>

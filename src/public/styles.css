@@ -109,7 +109,7 @@ p {
   text-align: center;
   color: white;
   position: absolute;
-  padding-top: 120px;
+  padding-top: 70px;
   font-size: 90px;
 }
 
@@ -127,7 +127,7 @@ p {
 .weather_day_message {
   color: rgb(245, 245, 245);
   margin: 0px;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 400;
   font-stretch: expanded;
 }

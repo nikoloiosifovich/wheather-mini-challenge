@@ -3,7 +3,7 @@
 
 <div class="show_weather_inner">
 
-  {% for day in data %}
+  {% for day in dados %}
   <article class="weather_wrapper">
 
     <div class="weather_sup_wrapper">
@@ -11,7 +11,7 @@
         <h1 class="weather_day">{{day.dt}}</h1>
       </div>
       <div class="weather_status">
-        <h2 class="weather_day_message">Fique em casa</h2>
+        <h2 class="weather_day_message">{{day.status}}</h2>
         <p class="weather_day_desciption">{{day.weather[0].description}}</p>
         <div class="weather_status_icon">
           <img src="http://openweathermap.org/img/wn/{{day.weather[0].icon}}@2x.png"

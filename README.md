@@ -18,7 +18,9 @@ _Não vai dar praia nos seguintes dias: Segunda, Quarta e Sexta._
 Para rodar esta aplicação devemos criar uma arquivo **.env** na raiz do projeto com as seguintes variáveis de ambiente:
 
 > API_KEY=**aqui você insere sua api_key do [openweathermap](https://openweathermap.org/api)**
+
 > LAT=**essa informação pode ser encontrada em [openweathermap](https://openweathermap.org/api)**
+
 > LON=**essa informação pode ser encontrada em [openweathermap](https://openweathermap.org/api)**
 
 Quando em desenvolvimento, utilizar o comando:

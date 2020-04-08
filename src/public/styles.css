@@ -113,6 +113,12 @@ p {
   font-size: 90px;
 }
 
+.weather_day .weather_weekday{
+  font-size: 16px;
+  position: inherit;
+  padding-top: 160px;
+}
+
 .weather_status {
   width: 100%;
   background: rgb(32, 35, 41) none repeat scroll 0% 0%;

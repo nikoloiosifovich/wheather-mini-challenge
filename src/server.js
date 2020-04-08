@@ -5,7 +5,13 @@ const routes = require("./routes");
 
 const server = express();
 
-server.use(cors()); // 👁 I will change this after dev (ALLOW ALL CONNECTIONS - DEVONLY)
+server.use(
+  cors({
+    // origin: "*",
+    // methods: "GET",
+    // optionsSuccessStatus: 204,
+  })
+); // 👁 I will change this after dev (ALLOW ALL CONNECTIONS - DEVONLY)
 
 server.use(express.static(__dirname + "/public"));
 

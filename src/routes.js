@@ -31,6 +31,7 @@ api.interceptors.response.use(
   async function (response) {
     const newData = await response.data.daily;
     for (e in newData) {
+      newData[e].weekday = moment.unix(newData[e].dt).format("dddd");
       newData[e].dt = moment.unix(newData[e].dt).format("DD");
       newData[e].status =
         newData[e].humidity > 70
